@@ -1,0 +1,664 @@
+@font-face{
+	font-family: "worksans";
+	src: url("worksans.ttf");
+}
+
+@font-face{
+	font-family: "novasans";
+	src: url("novasans.ttf");
+}
+
+
+
+
+
+:root{
+}
+
+html{
+}
+
+
+*{
+/*	transition: unset !important;*/
+}
+
+
+
+body{
+
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding-top: 8vh;
+
+
+}
+
+
+
+*{
+	font-weight: 100;
+	font-family: "worksans",system-ui,sans-serif;
+}
+
+img{
+	width: auto;
+}
+
+#welcoming{
+	text-align: center;
+}
+
+
+#welcoming{
+	letter-spacing: 2px;
+	margin-bottom: 0px;
+}
+
+
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav{
+	display: flex;
+
+}
+
+
+#app{
+
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+/*	justify-content: center;align-items: center;*/
+	max-width: 1200px;
+	width: 85%;
+/*	min-height: 60vh;*/
+/*	padding: 12vh 1vh;*/
+	border-radius: 15px;
+	border: 3px solid #fafafa;
+	background-color: white;
+/*	background-color: rgba(250, 250, 250, .45);*/
+/*	background: linear-gradient( to bottom right, rgba(0, 250, 250, .25)  , rgba(50, 250, 250, .25) , rgba(100, 220, 220, .25) 80% , rgba(0, 220, 220, .35) , rgba(100, 220, 220, .25) );*/
+
+	box-shadow: 0px 1px 14px #555;
+
+	backdrop-filter: blur(7px);
+
+/*	cursor: pointer;*/
+/*	transition: .5s box-shadow;*/
+	min-height: 90vh;
+}
+
+
+#app:hover{
+/*	transition: .5s box-shadow;*/
+/*	box-shadow: 1px 3px 24px #555;*/
+}
+
+
+
+#target {
+	margin: auto;
+
+}
+
+
+.counting-box{
+	filter: drop-shadow(0px 0px 3px black);
+	margin: auto;
+}
+
+
+
+
+
+.counting{
+	
+	width: 8rem;
+	height: 8rem;
+	margin: auto;
+	cursor: pointer;
+
+	position: relative;
+	border-radius: 50%;
+	background: radial-gradient(transparent 55%,white 57%,white 59%,#1f8495 60%,#1f8495 67%,white,white 69%);
+	clip-path: polygon(-200% 0%,300% 0%,300% 60%,-200% 60%);
+}
+
+
+
+
+
+
+.bolder{
+	font-weight: 800;
+}
+
+
+header{
+	padding: 7px 6px;
+}
+
+
+
+
+#header-link a{
+	position: relative;
+	display: inline-block;
+	transition: .5s transform;
+
+}
+
+
+#header-link a::after{
+	content: "";position: absolute;
+	display: inline-block;
+	background-color: #848484;
+	width: 40%;height: 3px;border-radius: 2px;
+	top: 108%;text-align: center;
+	left: 40%;opacity: 0;transform: translateY(100%);
+	transition: .5s opacity,.5s transform;
+}
+#header-link a:hover::after{
+	
+	opacity: 1;transform: translateY(0%);
+	transition: .5s opacity,.5s transform;
+}
+
+#header-link a:active{
+	transform: translateX(4px);
+	transition: .5s transform;
+}
+
+#header-link a:active:hover::after{
+	
+	opacity: 0;
+	transition: .5s opacity,.5s transform;
+}
+
+
+
+#header-link a{
+	text-decoration: none;
+	vertical-align: middle;
+	color: #222;
+	font-weight: 800;
+
+}
+
+#header-link:hover{
+	border-color: #666;
+}
+
+#header-link img{
+	height: 1.2rem;
+	vertical-align: bottom;
+}
+
+
+header nav *{
+	font-size: 1.03rem;
+}
+
+
+header nav div{
+	border: 0;
+	border-radius: 6px;overflow: hidden;
+	display: flex;flex-direction: row;
+	align-items: center;
+	margin: 5px 8px;
+	
+	
+}
+
+
+
+
+
+
+
+header nav #search-box{
+	background: white;
+	border: 3px solid #5269f8;padding: 1px 8px;
+
+}
+
+.icon{
+	align-self: center;height: 1rem;width: auto;
+}
+
+.icon img{
+	display: inline-block;width: auto;
+	height: 100%;width: auto;
+
+}
+
+
+
+
+#search-box input{
+	appearance: none;
+	border: 0;
+	
+}
+
+#search-box input:focus{
+	outline: 0;
+}
+
+
+.button-box button{
+	color: white;
+	background-color: #5269f8;
+	appearance: none;
+	border: 0;
+	cursor: pointer;
+	border-radius: 6px;overflow: hidden;
+	padding: 9px 11px;
+
+}
+
+.button-box button:active{
+	transform: translateY(2px);
+	box-shadow: 0px 1px #777;
+}
+
+
+section{
+	padding: 5%;
+	background-color: white;
+}
+
+
+#main-data{
+	margin:auto
+	width: 90%;
+}
+
+
+.account-title {
+	color: #333;
+	letter-spacing: 2px;
+	margin: 0;
+	font-family: "novasans";
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+
+
+#account-cents{
+	font-size: 1rem;
+	font-family: "worksans";
+
+	font-weight: 800;
+}
+
+.account-amount,#account-currency{
+	font-size: 2.4rem;
+	font-family: "worksans";
+	letter-spacing: 2px;
+	font-weight: 800;
+	color: #5269f8;
+	margin: 0;
+}
+
+#main-data nav{
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+
+#main-data .info-box{
+	width: 14rem;
+	height: 4.5rem;
+	box-shadow: 0px 1px 2px #777;
+	margin: 2vw;
+	margin: 2vmin;
+	border-radius: 7px;
+	background-color: rgba(220,255,255,.7);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	border: 3px solid #5269f8;
+	background-color: rgba(250,255,250,.7);
+}
+
+
+
+
+.info-content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.info-percent{
+	color: #5269f8;
+	font-weight: 800;
+}
+
+
+#main-data div h2,#main-data div p{
+	margin: 0;margin-left: 5px;
+}
+
+div .account-title{
+	font-size: 1.05rem;
+}
+
+
+
+.account-amount.info-amount{
+	font-size: 1.2rem;
+}
+
+.data-page{
+	position: relative;
+
+	width: 75%;
+	min-height: 200px;
+
+	margin: auto;margin-bottom: 40px;
+	border-radius: 1px;border-top-left-radius: 20px;
+	box-shadow: 0px 0px 4px #999,120px 120px 0px -110px white,-120px -120px 0px -110px white,-4px -4px #5269f8, 4px 4px #f85269, 0px 0px 4px #999;
+}
+
+
+
+.data-page h2{
+	font-weight: 800;
+	font-size: 1.1rem;
+	color: #080807;
+	letter-spacing: 1px;
+	display: inline-block;
+	position: relative;
+}
+
+
+.title-part{
+	cursor: pointer;
+}
+
+
+
+.aftertitle::after{
+
+	content: "";position: absolute;
+	display: inline-block;
+	background-color: #848484;
+	width: 100%;height: 2px;border-radius: 2px;
+	top: 108%;text-align: center;
+	left: 0%;
+	transform-origin: left;
+	transform: scaleX(.6);
+	transition: .5s transform;
+}
+
+.aftertitle:hover::after{
+transform: scaleX(1.0001);height: 2px;
+}
+
+.aftertitle-description{
+	text-align: center;
+	color: #555;
+	font-size: .9rem;
+	margin: 2px;
+	cursor: pointer;
+}
+
+
+
+#transactions-list{
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+
+}
+
+.tr-value,.tr-name{
+	font-weight: 800;
+	
+}
+
+.tr-positive{
+	color: #129312;
+}
+
+td p{
+	padding: 0;
+}
+
+
+
+
+.tr-value p{
+	font-weight: 800;
+	font-size: 1.24rem;
+	letter-spacing: 2px;
+}
+
+.tr-value span{
+	font-size: 50%;
+}
+
+
+.tr-state p{
+	font-family: "novasans";
+	letter-spacing: 1px;
+	border-radius: 4px;
+	padding: 4px 10px;
+	background-color: #5269f8;
+	text-align: center;
+	color: #fefefe;
+	font-size: 1.08rem;
+}
+
+.tr-state.tr-nonvalid p{
+	background-color: #f85269;
+}
+
+.tr-state.tr-valid p{
+	background-color: #00b500;
+}
+
+.color-red{
+	font-weight: 900;
+	color: #be1616;
+	display: inline-block;
+}
+
+tr span.color-red{
+	
+	font-size: 1.5rem !important;
+}
+
+td{
+	padding-right: 16px;
+}
+
+tr td:last-child{padding-right: 0;}
+
+
+.spacing{
+	width: 2%;
+
+}
+
+
+
+
+#contacts-data{
+	border-top-left-radius: 1px;
+	border-bottom-right-radius: 20px;
+}
+
+
+
+
+
+
+#contacts-list{
+	list-style-type: none;
+	padding: 0;
+}
+
+
+.contact{
+	margin: 6px 2px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 10px;
+
+}
+
+
+
+
+.contact-image-box{
+	overflow: hidden;
+	display: flex;flex-direction: row;justify-content: center;align-items: center;
+	border-radius: 50%;
+	width: 1.8rem;height: 1.8rem;
+	border: 2px solid white;
+	box-shadow: 0px 1px 2px #555;
+	margin: 1px 8px;
+	background-image: url("icons/contact.webp");
+	background-size: 50%;background-position: center;
+	background-repeat: no-repeat;
+	background-color: #5269f8;
+}
+
+
+
+.contact-image-box img{
+	width: 100%;
+	height: auto;
+
+}
+
+.contact:hover{
+	box-shadow: 0px 0px 4px #555;
+}
+
+
+.contact nav{
+	opacity: .8;
+	filter: opacity(20%);
+	pointer-events: none;
+	margin-left: auto;
+	padding: 1px 8px;
+}
+
+
+.contact:hover nav{
+	opacity: 1;
+	filter: opacity(100%);
+	pointer-events: all;
+}
+
+
+.contact nav button:first-child{
+	background-color: #f85269;
+}
+
+
+
+
+
+#cards-data{
+	border-radius: 1px;border-bottom-left-radius: 20px;
+}
+
+#cards-list{
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+.card{
+	position: relative;
+	cursor: pointer;
+	margin: 8px;
+	width: 14rem;
+	transition: .3s transform;
+	transform: scale(1.0)  rotateY(0deg);
+	z-index: 1;
+	display: flex;flex-direction: row;
+	align-items: center;
+	filter: drop-shadow(0px 0px 2px #888);
+}
+
+.card:hover{
+	transition: .3s transform;
+	transform: scale(1.1);
+	z-index: 2;
+
+}
+
+.card img{
+
+	width: 100%;
+	height: auto;
+}
+
+.card-spacing{
+	position: absolute;
+	
+	margin: auto;
+	top: 12%;left: 16.6%;
+	height: 14%;
+	background-color: white;
+	width: 39%;text-align: center;
+
+	border-radius: 14%/50%;
+}
+
+.card-description{
+	color: white;
+	display: inline-block;
+	border-radius: 10px;
+	font-family: "novasans";
+}
+
+
+.card .card-spacing{
+	filter: opacity(0%);
+	transition: .5s filter;
+}
+
+.card:hover .card-spacing{
+	filter: opacity(100%);
+	transition: .5s filter;
+}
+
+
+
+.card-description h1{
+	color: black;
+	font-size: .8rem;
+	font-family: "worksans";
+	letter-spacing: 2px;
+	font-weight: 800;
+	margin: 0;
+}
