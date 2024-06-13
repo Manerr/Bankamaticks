@@ -1,0 +1,31 @@
+@media all and (max-width:420px) {
+
+	#main-data nav{
+		flex-direction: column;
+	}
+
+	#main-data .info-box{
+		height: 46px;
+	}
+
+	header .text{
+		display: none;
+	}
+
+	header nav{
+/*		height: 40px;*/
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#search-box input{
+		width: 100px;
+	}
+
+	#search-box{
+		width: 100%;
+	}
+
+
+
+}
