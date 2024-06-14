@@ -5,9 +5,12 @@ The goal of Bankamaticks  *(I should really find an another name)* was to create
 
 
 ### Screenshots
+<details>
+<summary></summary>
+
 ![Main window preview](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen1.png?raw=true)
 ![Contact and card manager](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen2.png?raw=true)
-
+</details>
 
 ## Goals:
 
@@ -26,6 +29,6 @@ The goal of Bankamaticks  *(I should really find an another name)* was to create
 ## How to use it:
 
  1. Download the full repo
- 2. Just put the included files on your server directory [Except the screenshots...]. *[Don't forget to customize them and work yourself since it's just the design part]* 
+ 2. Just put the included files on your server directory. *[Don't forget to customize them and work yourself since it's just the design part]* 
  3. Enjoy.
   
