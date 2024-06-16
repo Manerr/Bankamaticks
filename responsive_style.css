@@ -1,8 +1,76 @@
-@media all and (max-width:420px) {
+@media all and (max-width:620px){
+	header nav{
+/*		height: 40px;*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	header  .button-box{
+/*		width: 40%;*/
+		flex: 1;
+	}
+
+	header .button-box button{
+		width: 100%;
+	}
+
+	#search-box input{
+
+		flex: 1;
+	}
+
+	#search-box{
+
+		width: 100%;
+	}
+
+	.text{
+		display: none;
+	}
+
+
+	body main#app{
+		width: 93%;
+	}
+
+	table .tr-state{
+		overflow: hidden;
+		display: block;
+		width: 1vw;
+/*		background-color: blue;*/
+	}
+
+
+} 
+
+
+
+
+
+@media all and (max-width:520px) {
 
 	#main-data nav{
 		flex-direction: column;
 	}
+
+}
+
+
+
+
+
+@media all and (min-width:520px) and  (max-width:900px) {
+
+
+
+	#main-data{
+		padding-left: 4px;
+		padding-right: 4px;
+		margin: auto 0;
+		width: 97%;
+	}
+
 
 	#main-data .info-box{
 		height: 46px;
@@ -16,16 +84,55 @@
 /*		height: 40px;*/
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
-	#search-box input{
-		width: 100px;
+	header  .button-box{
+/*		width: 40%;*/
+		flex: 1;
 	}
 
-	#search-box{
+	header .button-box button{
 		width: 100%;
 	}
 
+	#search-box input{
+
+		flex: 1;
+	}
+
+	#search-box{
+
+		width: 100%;
+	}
+
+	main{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#true-title{
+		margin: auto;
+		width: fit-content;
+	}
+
+	#true-title *{
+		width: auto;
+		width: fit-content;
+	}
 
 
+	.info-box#info-protected-money{
+		display: none;
+	}
+
+
+}
+
+
+@media all and (max-width:620px){
+	.info-box *{
+		font-size: 88%;
+	}
 }
