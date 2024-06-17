@@ -539,6 +539,24 @@ tr td:last-child{padding-right: 0;}
 	background-color: #f85269;
 }
 
+.contact nav div{
+	display: flex;justify-content: center;
+}
+
+.contact nav button {
+	margin: 3px;
+	display: flex;align-items: center;flex-direction: row;justify-content: center;
+}
+
+
+.contact nav button img{
+	height: .68rem;width: .68rem;
+	vertical-align: middle;
+}
+
+.contact button span{
+	margin: 0px 2px;
+}
 
 
 

@@ -9,8 +9,9 @@ The goal of Bankamaticks  *(I should really find an another name)* was to create
 <details>
 <summary>Click this arrow to open screenshots</summary>
 
-![Main window preview](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen1.png?raw=true)
-![Contact and card manager](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen2.png?raw=true)
+![Main window preview](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen1.webp?raw=true)
+![Contact and card manager](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen2.webp?raw=true)
+![Contact and card manager in a mobile layout](https://github.com/Manerr/Bankamaticks/blob/main/screenshots/screen3.webp?raw=true)
 </details>
 
 ## Goals:

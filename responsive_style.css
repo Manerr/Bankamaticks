@@ -25,7 +25,7 @@
 		width: 100%;
 	}
 
-	.text{
+	header .text{
 		display: none;
 	}
 
@@ -48,11 +48,17 @@
 
 
 
-@media all and (max-width:520px) {
+@media all and (max-width:580px) {
 
 	#main-data nav{
 		flex-direction: column;
 	}
+
+	#main-data .info-box{
+		height: unset;
+	}
+
+
 
 }
 
@@ -60,9 +66,11 @@
 
 
 
-@media all and (min-width:520px) and  (max-width:900px) {
+@media all and (min-width:580px) and  (max-width:900px) {
 
-
+	#app{
+		width: 92%;
+	}
 
 	#main-data{
 		padding-left: 4px;
@@ -112,15 +120,7 @@
 		justify-content: center;
 	}
 
-	#true-title{
-		margin: auto;
-		width: fit-content;
-	}
-
-	#true-title *{
-		width: auto;
-		width: fit-content;
-	}
+	
 
 
 	.info-box#info-protected-money{
@@ -135,4 +135,90 @@
 	.info-box *{
 		font-size: 88%;
 	}
+
+	#contacts-list nav button{
+		padding: 8px 5px;
+	}
+
+	.contact p{
+		font-size: .95rem;
+	}
+
+
+
+}
+
+
+@media all and (max-width:450px){
+	.contact button .text{
+		display: none;
+	}
+
+	.contact button{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+	}
+}
+
+
+
+
+@media all and (max-width:900px){
+
+	#transactions-list tr:hover{
+		box-shadow: unset;
+	}
+
+	#transactions-list td{
+		padding-right: 2px;
+	}
+
+
+	#transactions-list td:last-child{
+		padding-right: 0px;
+	}
+
+	td.tr-state{
+		padding-right: 0;
+	}
+	
+	td.tr-state p{
+		padding: 2px;
+	}
+
+	#transactions-list tr{
+		font-size: .95rem;
+	}
+
+	.data-page{
+		width: 83%;
+	}
+
+	section.data-page{
+		padding: 3%;
+	}
+
+	#true-title{
+		margin: auto;
+		width: fit-content;
+	}
+
+	#true-title *{
+		width: auto;
+		width: fit-content;
+	}
+
+
+	footer{
+		padding: 8px 4px;
+		width: 94%;
+	}
+
+	footer p{
+		font-size: 1.12rem;
+		margin:4px 1px;
+	}
+
+
 }
