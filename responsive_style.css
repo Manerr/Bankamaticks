@@ -36,10 +36,29 @@
 
 	table .tr-state{
 		overflow: hidden;
-		display: block;
-		width: 1vw;
+		display: inline-block;
+		width: 1rem;
+/*		height: 1.6rem;*/
+		color: transparent;
+		border-radius: 50%;
+		vertical-align: middle;
+/*		-top: auto;		*/
 /*		background-color: blue;*/
 	}
+
+
+	.tr-state p{
+		height: .8rem;
+		color: transparent;
+		border-radius: 50%;
+		vertical-align: middle;
+	}
+
+	#transactions-list tr:hover{
+		box-shadow: 0px 0px 2px #999 !important;
+
+
+	} 
 
 
 } 
@@ -57,6 +76,12 @@
 	#main-data .info-box{
 		height: unset;
 	}
+
+	#transactions-list p{
+		font-size: 1rem;
+	}
+
+
 
 
 
@@ -165,6 +190,10 @@
 
 
 @media all and (max-width:900px){
+
+	#transactions-list td.tr-title{
+		display: none;
+	}
 
 	#transactions-list tr:hover{
 		box-shadow: unset;
